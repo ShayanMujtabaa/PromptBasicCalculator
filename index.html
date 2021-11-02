@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+</head>
+
+<body>
+    <h3>Basic Calculator </br>
+    </h3>
+    <script>
+        var num1 = parseInt(prompt("Enter the first number", ""))
+        var num2 = parseInt(prompt("Enter the second number", ""))
+        var operator = prompt("Please enter your operator", operator)
+
+        function add(num1, num2) {
+            var ans = num1 + num2
+            document.write("The answer is " + ans)
+
+        }
+
+        function sub(num1, num2) {
+            var ans = num1 - num2
+            document.write("The answer is " + ans)
+        }
+
+        function multi(num1, num2) {
+            var ans = num1 * num2
+            document.write("The answer is " + ans)
+        }
+
+        function divide(num1, num2) {
+            var ans = num1 / num2
+            document.write("The answer is " + ans)
+        }
+
+
+        if (operator == "+") {
+            add(num1, num2)
+        } else if (operator == "-") {
+            sub(num1, num2)
+        } else if (operator == "*") {
+            multi(num1, num2)
+        } else if (operator == "/") {
+            divide(num1, num2)
+        } else {
+            document.write("The Operator you entered is incorrect")
+        } 
+
+
+
+
+        // var abc = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        // document.write(abc)
+
+        // var obj = {name: "Shayan" , age: 21 , height : 5"'"8 , weight : 70}
+        // document.write(obj)
+
+        
+    </script>
+</body>
+
+</html>
